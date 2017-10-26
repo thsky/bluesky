@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		html {
+			font-size: 40px;
+		}
+		.box {
+			width: 2.5rem;
+			height: 2.5rem;
+			background-color: red;
+		}
+			
+		@media (min-width: 320px) {
+			html {
+				font-size: 40px;
+			}
+		}
+		@media (min-width: 350px) {
+			html {
+				font-size: 43.75px;
+			}
+		}
+		@media (min-width: 380px) {
+			html {
+				font-size: 47.5px;
+			}
+		}
+
+
+		/* 因为页面上所有的rem的参照值都是html的根目录，我们只需要将以前用px单位改写成rem，并且根据不同的屏幕大小，动态去设置html的font-size的大小 */
+
+		
+		/* 比例：设计图的原始宽度/我们基于这个设计图自定义的html的fontSize = 用户的手机屏幕/这个屏幕所对应的html的fontSize */
+
+
+
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>
